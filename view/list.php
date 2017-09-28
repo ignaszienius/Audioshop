@@ -28,10 +28,10 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="#">FAQ</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -51,11 +51,11 @@
         
     </div>
     <div class="col">
-      <div class="col">
-              <h1>Products</h1>
+      <div class="row">
+              <div class="col-12"><h1>Products</h1></div>
               <?php
                 foreach ($products as $product) {
-                  echo "<div class='col-4'><table class='table table-dark table-inverse'><tr><td> Model</td><td>". $product['name'] . "</td></tr><tr class='price'><td>Price</td><td>". $product['price'] ." EUR </td></tr><tr><td>Description</td><td>". $product['description'] . "</td></tr><tr><td>Foto</td><td><img src='images/"  . $product['image'] . "'style='height:300px;'></td></tr></table></div>";
+                  echo "<div class='col-3 ' style='min-height: 500px;'><table class='table bg-dark text-white'><tr><td> Model</td><td>". $product['name'] . "</td></tr><tr class='price'><td>Price</td><td>". $product['price'] ." EUR </td></tr><tr><td>Description</td><td>". $product['description'] . "</td></tr><tr><td>Foto</td><td><img src='images/"  . $product['image'] . "'style='height:300px;'></td></tr></table></div>";
                 }
               ?>
 
